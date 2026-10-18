@@ -9,6 +9,7 @@ HTML_TEMPLATE = """
 <head>
 <meta charset="UTF-8">
 <title>URL Encoder/Decoder</title>
+<script defer src="https://analytics.swiftworks.dev/script.js" data-website-id="6863f17b-0dbb-4e6c-83d5-fb2805a428e4"></script>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -50,8 +51,8 @@ HTML_TEMPLATE = """
     <h2>URL Encoder/Decoder</h2>
     <form action="" method="post">
         <input type="text" name="url" placeholder="Enter URL here..." required>
-        <button type="submit" name="action" value="encode">Encode</button>
-        <button type="submit" name="action" value="decode">Decode</button>
+        <button type="submit" name="action" value="encode" data-umami-event="url-encode">Encode</button>
+        <button type="submit" name="action" value="decode" data-umami-event="url-decode">Decode</button>
     </form>
         {% if result %}
             <div class="result">{{ result }}
